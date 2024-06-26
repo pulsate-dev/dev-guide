@@ -1,5 +1,5 @@
 setup:
-	cargo install mdbook mdbook-toc
+	cargo install mdbook mdbook-toc mdbook-alerts
 
 b:
 	mdbook build

@@ -10,10 +10,13 @@ build-dir = "build"
 create-missing = false
 use-default-templates = true
 
+[output.html]
+git-repository-url = "https://github.com/pulsate-dev/dev-guide"
+edit-url-template = "https://github.com/pulsate-dev/dev-guide/edit/main/{path}"
+
 [preprocessor.toc]
 command = "mdbook-toc"
 renderer = ["html"]
 
-[output.html]
-git-repository-url = "https://github.com/pulsate-dev/dev-guide"
-edit-url-template = "https://github.com/pulsate-dev/dev-guide/edit/main/{path}"
+[preprocessor.alerts]
+

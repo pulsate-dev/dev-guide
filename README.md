@@ -22,10 +22,10 @@ Rust を既にインストールしている人は以下のコマンドを実行
 cargo install mdbook
 ```
 
-また目次の生成に [`mdbook-toc`](https://github.com/badboy/mdbook-toc) というサードパーティプラグインを使用しています. これもインストールしてください.
+各サードパーティプラグインも使用しているため, 同時にインストールしてください.
 
 ```sh
-cargo install mdbook-toc
+cargo install mdbook-toc mdbook-alerts
 ```
 
 ```sh

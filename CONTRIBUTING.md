@@ -26,17 +26,38 @@ mdbook serve
 
 ### サードパーティプラグイン
 
-また目次の生成に [`mdbook-toc`](https://github.com/badboy/mdbook-toc) というサードパーティプラグインを使用しています.
+目次の生成や Callout 生成にサードパーティプラグインを使用しています.
 
 これも `cargo` を使用してインストールしてください.
 
 ```sh
-cargo install mdbook-toc
+cargo install mdbook-toc mdbook-alerts
 ```
 
 ## 目次の追加
 
 目次が必要な箇所に `<!-- toc -->` マーカーを入れることでプラグインを呼び出すことができます.
+
+## Callout の追加
+
+注意書きなどに使用できる Callout は以下のように使用できます.
+
+```md
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+```
 
 ## サイドバーの編集
 
