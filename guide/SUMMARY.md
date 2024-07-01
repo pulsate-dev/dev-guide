@@ -4,6 +4,7 @@
 
 # 開発ガイド
 
+- [開発に参加する](./develop/getting-started.md)
 - [バックエンド](./develop/backend.md)
 
 # ライブラリ
