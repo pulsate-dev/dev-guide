@@ -36,6 +36,11 @@ jobs:
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
 
+      - name: Setup cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: "dev-guide/gh-actions-cache"
+
       - name: Setup mdbook
         uses: peaceiris/actions-mdbook@v2
         with:
@@ -45,11 +50,6 @@ jobs:
         run: |
           cargo install mdbook-toc --version ${{ env.MDBOOK_TOC_VERSION }}
           cargo install mdbook-alerts --version ${{ env.MDBOOK_ALERTS_VERSION }}
-
-      - name: Setup cache
-        uses: Swatinem/rust-cache@v2
-        with:
-          prefix-key: "dev-guide/gh-actions-cache"
     
       - name: Build dev-guide
         run: |
