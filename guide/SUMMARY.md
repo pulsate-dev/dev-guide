@@ -9,3 +9,7 @@
 # ライブラリ
 
 - [mini-fn](./develop/mini-fn.md)
+
+# GitHub (プロジェクトチーム向け)
+
+- [Rulesets](./github/rulesets.md)
